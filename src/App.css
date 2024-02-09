@@ -14,3 +14,29 @@
 ul > li {
   list-style: none;
 }
+.brandStyle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 2px;
+}
+.productStyle {
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.imgStyle {
+  width: 150px;
+}
+
+@media (max-width: 412px) {
+  .brandStyle {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px 2px;
+  }
+}
+@media (max-width: 768px) {
+}
