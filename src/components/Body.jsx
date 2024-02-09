@@ -14,14 +14,23 @@ const Body = () => {
     fetchData();
   }, []);
   return (
-    <div className="brandStyle">
-      {data?.map((item) => {
-        return (
-          <div className="productStyle">
-            <Resturant key={item.id} resData={item} />
-          </div>
-        );
-      })}
+    <div>
+      <div className="inputStyle">
+        <input
+          type="text"
+          className="InnerinputStyle"
+          placeholder="Search Here..."
+        />
+      </div>
+      <div className="brandStyle">
+        {data?.map((item) => {
+          return (
+            <div className="productStyle">
+              <Resturant key={item.id} resData={item} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

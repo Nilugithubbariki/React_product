@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import ApplyOut from "./components/ApplyOut";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Grocery from "./components/Grocery";
@@ -12,7 +11,6 @@ const App = () => {
     <div>
       <Hearder />
       <Routes>
-        {/* <Route path="/" element={<ApplyOut />} /> */}
         <Route path="/" element={<Body />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />

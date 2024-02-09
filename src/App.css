@@ -29,7 +29,17 @@ ul > li {
 .imgStyle {
   width: 150px;
 }
-
+.inputStyle {
+  /* margin: auto;
+  width: 20px; */
+  padding: 23px 0px 0px 2px;
+}
+/* .InnerinputStyle {
+  width: 506px;
+  height: 30px;
+  border-radius: 10px;
+} */
+//***************************************Responsive************************************//
 @media (max-width: 412px) {
   .brandStyle {
     display: grid;
@@ -37,6 +47,9 @@ ul > li {
     gap: 20px;
     padding: 20px 2px;
   }
+  /* .InnerinputStyle {
+    width: 10px;
+  } */
 }
 @media (max-width: 768px) {
 }
