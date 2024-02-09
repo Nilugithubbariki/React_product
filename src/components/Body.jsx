@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Resturant from "./Resturant";
-
 const Body = () => {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
