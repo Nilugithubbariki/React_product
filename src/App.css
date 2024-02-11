@@ -33,7 +33,17 @@ ul > li {
 .inputStyle {
   padding: 23px 0px 0px 2px;
 }
-
+.paginationStyle {
+  text-align: center;
+}
+.btnStyle {
+  height: 38px;
+  width: 100px;
+  background: green;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
 @media (max-width: 412px) {
   .brandStyle {
     display: grid;
