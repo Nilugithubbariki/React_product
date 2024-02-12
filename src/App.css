@@ -12,8 +12,20 @@
   background: #8bc34a;
   padding: 0px 10px;
 }
+.btn {
+  border: none;
+  background: #8bc34a;
+  color: black;
+}
 ul > li {
   list-style: none;
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+}
+.cartimgStyle {
+  width: 150px;
 }
 .brandStyle {
   display: grid;
