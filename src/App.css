@@ -102,6 +102,9 @@ li {
     padding: 0px 10px;
     font-size: 11px;
   }
+  .InnerinputStyle {
+    width: 100px;
+  }
 }
 @media (max-width: 768px) {
   .ulStyle {
