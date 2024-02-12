@@ -103,7 +103,7 @@ li {
     font-size: 11px;
   }
   .InnerinputStyle {
-    width: 140px;
+    width: 120px;
   }
 }
 @media (max-width: 768px) {
