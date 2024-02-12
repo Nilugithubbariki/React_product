@@ -1,29 +1,33 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-const ResturantMenu = () => {
-  const { userId } = useParams();
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import "../App.css";
+function RestuarantMenu() {
+  const { resId } = useParams();
   const [product, setProduct] = useState(null);
+
   useEffect(() => {
-    axios
-      .get(`https://dummyjson.com/products/${userId}`)
-      .then((res) => {
-        setProduct(res.data.products);
-      })
-      .catch((error) => {
-        alert("Something Went Wront...");
-      });
-  }, [userId]);
+    axios.get(`https://dummyjson.com/products/${resId}`).then((response) => {
+      setProduct(response.data);
+    });
+  }, [resId]);
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
-      {product?.map((item) => {
-        return (
-          <div>
-            <div>{item.brand}</div>
-          </div>
-        );
+      <h1>Product Details</h1>
+
+      {product.images.map((image) => {
+        return <img src={image} alt="" className="productImage" />;
       })}
+
+      <p>{product.description}</p>
+      <Link to="/">Back to Product List</Link>
     </div>
   );
-};
-export default ResturantMenu;
+}
+
+export default RestuarantMenu;

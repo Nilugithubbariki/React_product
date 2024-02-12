@@ -28,8 +28,9 @@ const Body = ({ pagePer }) => {
     fetchData();
   }, []);
   const dispatch = useDispatch();
-  const handleAdd = (resData) => {
-    dispatch(addItem(resData));
+  const handleAdd = (resp) => {
+    dispatch(addItem(resp));
+    console.log("Nilanchala");
   };
   return (
     <div>
@@ -52,13 +53,13 @@ const Body = ({ pagePer }) => {
               return item;
             }
           })
-          .map((item) => {
+          ?.map((resp) => {
             return (
               <div className="productStyle">
-                <Link key={item.id} to={"/resturantmenu/" + item.id}>
-                  <Resturant key={item.id} resData={item} />
+                <Link key={resp.id} to={"/resturantmenu/" + resp.id}>
+                  <Resturant key={resp.id} resData={resp} />
                 </Link>
-                <button onClick={() => handleAdd(item)}>Add to cart</button>
+                <button onClick={() => handleAdd(resp)}>Add to cart</button>
                 <button>Buy now</button>
               </div>
             );

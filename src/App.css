@@ -36,6 +36,9 @@ ul > li {
 .paginationStyle {
   text-align: center;
 }
+.productImage {
+  width: 150px;
+}
 .btnStyle {
   height: 38px;
   width: 100px;
