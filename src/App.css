@@ -105,6 +105,12 @@ li {
   .InnerinputStyle {
     width: 120px;
   }
+  .sendbtn {
+    width: 372px;
+  }
+  .send-text: {
+    margin-left: -36px;
+  }
 }
 @media (max-width: 768px) {
   .ulStyle {

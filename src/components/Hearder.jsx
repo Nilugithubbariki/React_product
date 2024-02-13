@@ -25,11 +25,6 @@ const Hearder = () => {
           </Link>
         </li>
         <li>
-          <Link to="/Grocery" style={{ textDecoration: "none" }}>
-            Grocery
-          </Link>
-        </li>
-        <li>
           <Link to="/Cart" style={{ textDecoration: "none" }}>
             Cart({cartItems.length}items)
           </Link>
