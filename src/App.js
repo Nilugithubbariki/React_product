@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Grocery from "./components/Grocery";
 import Cart from "./components/Cart";
 import Body from "./components/Body";
 import Hearder from "./components/Hearder";
