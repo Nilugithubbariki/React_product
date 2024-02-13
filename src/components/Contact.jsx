@@ -5,7 +5,6 @@ const Contact = () => {
     <div>
       <section className="contact">
         <h1 className="section-header">Contact</h1>
-
         <div className="contact-wrapper">
           <form className="contact-form form-horizontal" role="form">
             <div className="form-group">
@@ -21,7 +20,6 @@ const Contact = () => {
                 />
               </div>
             </div>
-
             <div className="form-group">
               <div className="col-sm-12">
                 <input
@@ -35,7 +33,6 @@ const Contact = () => {
                 />
               </div>
             </div>
-
             <textarea
               className="form-control"
               rows="10"
@@ -43,7 +40,6 @@ const Contact = () => {
               name="message"
               required
             ></textarea>
-
             <button
               className="btn btn-primary send-button sendbtn"
               id="submit"
@@ -56,7 +52,6 @@ const Contact = () => {
               </div>
             </button>
           </form>
-
           <div className="direct-contact-container">
             <ul className="contact-list">
               <li className="list-item">
@@ -76,7 +71,6 @@ const Contact = () => {
                   </span>
                 </i>
               </li>
-
               <li className="list-item">
                 <i class="bi bi-envelope">
                   {" "}
@@ -88,7 +82,6 @@ const Contact = () => {
                 </i>
               </li>
             </ul>
-
             <hr />
             <ul class="social-media-list">
               <li>
@@ -108,7 +101,6 @@ const Contact = () => {
               </li>
             </ul>
             <hr />
-
             <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
           </div>
         </div>
@@ -116,5 +108,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;
